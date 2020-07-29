@@ -1,7 +1,6 @@
 import React, { Component } from 'react' ;
 import '../styles/Dropdown.css';
 
-
 export class Dropdown extends Component{
     constructor(props){
         super(props);
@@ -45,8 +44,6 @@ export class Dropdown extends Component{
         document.removeEventListener('mousedown', this.clickOrTouchOutside);
         document.removeEventListener('touchstart', this.clickOrTouchOutside);
     }
-
-    
 
     render() {
         const animationClass = this.props.animation ? '__animated':'';
@@ -96,6 +93,3 @@ export const DropDownItem = ({...props})=>{
       </li>
     )
   }
-  
-
-  
